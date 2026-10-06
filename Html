@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fãtzy Visuals AI Academy</title>
+<meta name="description" content="Learn AI image creation, AI video creation, prompting and visual storytelling with Fãtzy Visuals AI Academy.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#080808;color:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1100px;margin:auto}
+header{background:#0d0d0d;border-bottom:1px solid #292929;position:sticky;top:0;z-index:1000}
+.navbar{min-height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:21px;font-weight:bold}
+.logo span:first-child{color:#f6d88a}
+.nav-links{display:flex;gap:18px;font-size:13px}
+.nav-links a{color:#aaa}
+.nav-links a:hover{color:#f6d88a}
+.hero{text-align:center;padding:90px 18px 40px}
+.hero .small{color:#f6d88a;letter-spacing:3px;font-size:12px;margin-bottom:16px}
+.hero h1{font-size:38px;line-height:1.15;max-width:600px;margin:0 auto}
+.hero h1 span{color:#f6d88a}
+.hero p{color:#999;font-size:14px;max-width:520px;margin:18px auto 28px}
+.btns{display:flex;flex-direction:column;gap:12px;max-width:340px;margin:0 auto}
+.btn{padding:14px;border-radius:12px;font-weight:800;font-size:14px;text-align:center;display:block}
+.btn-gold{background:#f6d88a;color:#000}
+.btn-outline{border:1px solid #5a5135;color:#f6d88a;background:transparent}
+.section{padding:50px 0}
+.section-title{text-align:center;color:#f6d88a;font-size:22px;margin-bottom:6px}
+.section-sub{text-align:center;color:#666;font-size:12px;margin-bottom:22px}
+.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+.tab{border:1px solid #3a3320;color:#f6d88a;padding:10px 16px;border-radius:30px;font-size:12px;font-weight:800;cursor:pointer}
+.tab.active{background:#f6d88a;color:#000}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{background:#131313;border:1px solid #2e2818;border-radius:16px;padding:20px}
+.card h3{text-align:center;color:#f6d88a;font-size:14px}
+.price{text-align:center;font-size:28px;color:#f6d88a;font-weight:800;margin:10px 0}
+.price small{font-size:11px;color:#aaa;font-weight:400}
+.list{list-style:none;margin:12px 0}
+.list li{font-size:11px;color:#bbb;padding:5px 0}
+.list li:before{content:"✓ ";color:#f6d88a;font-weight:800}
+.pay{max-width:520px;margin:40px auto 0;background:#141414;border:1px solid #2e2818;border-radius:18px;padding:20px;text-align:center}
+.acct{border:1px dashed #f6d88a;border-radius:12px;padding:12px;margin:12px 0}
+.acct b{color:#f6d88a;font-size:26px}
+input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #333;background:#0f0f0f;color:#fff;margin:6px 0;font-size:13px}
+footer{border-top:1px solid #222;padding:20px 0;text-align:center;color:#555;font-size:11px;margin-top:40px}
+</style>
+</head>
+<body>
+<header>
+<div class="container navbar">
+<div class="logo"><span>Fãtzy</span> <span>Visuals</span></div>
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#courses">Courses</a>
+<a href="#register">Register</a>
+<a href="https://wa.me/2347041347577">Contact</a>
+</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="small">FÃTZY VISUALS AI ACADEMY</div>
+<h1>Learn To Create <span>Stunning AI Visuals</span></h1>
+<p>Learn AI image creation, AI video creation, professional prompting, visual storytelling and practical AI workflows from beginner level.</p>
+<div class="btns">
+<a href="#courses" class="btn btn-gold">Explore Courses</a>
+<a href="#register" class="btn btn-outline">Register Now</a>
+</div>
+</section>
+
+<section class="section container" id="courses">
+<div class="section-title">Choose Your Plan</div>
+<div class="section-sub">Premium AI training with support group & 1-on-1</div>
+
+<div class="tabs">
+<div class="tab active" onclick="show('normal',this)">Normal + Support Group</div>
+<div class="tab" onclick="show('one',this)">One-on-One</div>
+<div class="tab" onclick="show('pack',this)">Prompt Pack</div>
+</div>
+
+<div id="normal" class="grid">
+<div class="card"><h3>AI Image Creation</h3><div class="price">₦4,999 <small>per month</small></div><ul class="list"><li>50+ AI Image Templates</li><li>Community Access & Support Group</li><li>Weekly Live Q&A Sessions</li><li>Download High-Res Exports</li></ul><a class="btn btn-gold" href="#register" onclick="setC('Image Normal - N4,999')">Select Plan</a></div>
+<div class="card"><h3>AI Video Creation</h3><div class="price">₦8,990 <small>per month</small></div><ul class="list"><li>30+ AI Video Templates</li><li>Community Access & Support Group</li><li>Weekly Live Q&A Sessions</li><li>1080p Video Generation</li></ul><a class="btn btn-gold" href="#register" onclick="setC('Video Normal - N8,990')">Select Plan</a></div>
+</div>
+
+<div id="one" class="grid" style="display:none">
+<div class="card"><h3>Image One-on-One</h3><div class="price">₦6,000 <small>per session</small></div><ul class="list"><li>1-on-1 Expert Coaching Session</li><li>Personalized Image Workflow</li><li>Portfolio Review & Feedback</li><li>60-Minute Zoom Call</li></ul><a class="btn btn-gold" href="#register" onclick="setC('Image One-on-One - N6,000')">Book Session</a></div>
+<div class="card"><h3>Video One-on-One</h3><div class="price">₦9,999 <small>per session</small></div><ul class="list"><li>1-on-1 Expert Coaching Session</li><li>AI Video Strategy & Planning</li><li>Editing & Production Guidance</li><li>60-Minute Zoom Call</li></ul><a class="btn btn-gold" href="#register" onclick="setC('Video One-on-One - N9,999')">Book Session</a></div>
+</div>
+
+<div id="pack" class="grid" style="display:none">
+<div class="card"><h3>Prompt Pack</h3><div class="price">₦7,500 <small>one-time</small></div><ul class="list"><li>200+ Curated AI Prompts</li><li>Prompt Guide PDF Included</li><li>Commercial Use Allowed</li><li>Instant Download</li></ul><a class="btn btn-gold" href="#register" onclick="setC('Prompt Pack - N7,500')">Get Prompt Pack</a></div>
+</div>
+
+<div class="pay" id="register">
+<h3 style="color:#f6d88a">Complete Your Enrollment</h3>
+<div class="acct"><div style="font-size:10px;color:#888;letter-spacing:2px">OPAY ACCOUNT NUMBER</div><b>7041347577</b><div style="margin-top:4px">Emmanuel Oluwajuwon Fatoye</div><div style="font-size:11px;color:#888">OPay</div></div>
+<input id="name" placeholder="Your Full Name">
+<input id="wa" placeholder="Your WhatsApp Number">
+<select id="course"><option>Image Normal - N4,999</option><option>Video Normal - N8,990</option><option>Image One-on-One - N6,000</option><option>Video One-on-One - N9,999</option><option>Prompt Pack - N7,500</option></select>
+<a class="btn btn-gold" href="javascript:void(0)" onclick="let n=document.getElementById('name').value,w=document.getElementById('wa').value,c=document.getElementById('course').value;if(!n||!w){alert('Fill name & WhatsApp');return}let m=`New Payment%0AName:${n}%0AWhatsApp:${w}%0ACourse:${c}%0AAcct:7041347577`;window.open('https://wa.me/2347041347577?text='+m,'_blank')">Submit on WhatsApp</a>
+</div>
+
+</section>
+
+<footer>© 2026 Fãtzy Visuals AI Academy — fatzy.neocities.org</footer>
+
+<script>function show(id,el){document.getElementById('normal').style.display='none';document.getElementById('one').style.display='none';document.getElementById('pack').style.display='none';document.getElementById(id).style.display='grid';document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));el.classList.add('active')}function setC(v){document.getElementById('course').value=v;document.getElementById('register').scrollIntoView({behavior:'smooth'})}</script>
+</body>
+</html>
