@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07152f">
+
+<title>Fãtzy Visuals | Creative Studio</title>
+
+<meta name="description" content="Fãtzy Visuals is an AI-powered creative studio offering premium AI visuals, video creation, brand content, digital experiences and AI education.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+--navy:#07152f;
+--blue:#397ee8;
+--light:#eef5ff;
+--white:#ffffff;
+--gray:#778399;
+--dark:#101c33;
+}
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html {
+scroll-behavior:smooth;
+scroll-padding-top:85px;
+}
+
+body {
+font-family:'DM Sans',sans-serif;
+color:var(--dark);
+overflow-x:hidden;
+background:white;
+}
+
+a {
+text-decoration:none;
+color:inherit;
+}
+
+.container {
+width:min(1160px,90%);
+margin:auto;
+}
+
+/* HEADER */
+
+header {
+height:75px;
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(255,255,255,.94);
+backdrop-filter:blur(15px);
+border-bottom:1px solid #e9edf4;
+}
+
+nav {
+height:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo {
+font-family:Manrope,sans-serif;
+font-weight:800;
+font-size:19px;
+color:var(--navy);
+letter-spacing:-1px;
+}
+
+.logo span {
+color:var(--blue);
+}
+
+.logo small {
+display:block;
+font-size:8px;
+letter-spacing:3px;
+color:#78869d;
+}
+
+.nav-links {
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+.nav-links a {
+font-size:12px;
+font-weight:700;
+color:#536079;
+transition:.3s;
+}
+
+.nav-links a:hover {
+color:var(--blue);
+}
+
+.nav-button,.button {
+display:inline-block;
+background:var(--blue);
+color:white;
+padding:13px 23px;
+border-radius:50px;
+font-size:12px;
+font-weight:800;
+transition:.3s;
+}
+
+.nav-button:hover,.button:hover {
+transform:translateY(-3px);
+box-shadow:0 10px 25px #397ee844;
+}
+
+.menu {
+display:none;
+border:0;
+background:none;
+font-size:25px;
+color:var(--navy);
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero {
+background:
+radial-gradient(circle at 80% 20%,#183b71,transparent 35%),
+linear-gradient(120deg,#061329,#0b2045);
+color:white;
+padding:105px 0;
+position:relative;
+overflow:hidden;
+}
+
+.hero-grid {
+display:grid;
+grid-template-columns:1.1fr .9fr;
+align-items:center;
+gap:55px;
+}
+
+.tag {
+font-size:10px;
+letter-spacing:3px;
+color:#8ebeff;
+font-weight:800;
+margin-bottom:23px;
+}
+
+.hero h1 {
+font-family:Manrope,sans-serif;
+font-size:clamp(43px,6vw,72px);
+line-height:1.12;
+letter-spacing:-3px;
+}
+
+.hero h1 span {
+color:#82b9ff;
+}
+
+.hero p {
+color:#bdcbe1;
+font-size:15px;
+line-height:1.9;
+margin:24px 0 30px;
+max-width:520px;
+}
+
+.hero-buttons {
+display:flex;
+gap:13px;
+flex-wrap:wrap;
+}
+
+.outline {
+border:1px solid #ffffff55;
+padding:13px 23px;
+border-radius:50px;
+font-size:12px;
+font-weight:800;
+transition:.3s;
+}
+
+.outline:hover {
+background:#ffffff15;
+}
+
+.hero-visual {
+height:390px;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+.visual-box {
+width:290px;
+height:350px;
+border-radius:25px;
+background:linear-gradient(145deg,#9bc9f6,#183d76,#07152f);
+display:flex;
+align-items:flex-end;
+padding:25px;
+box-shadow:0 30px 80px #0008;
+transform:rotate(3deg);
+animation:float 5s ease-in-out infinite;
+}
+
+.visual-box span {
+font-size:12px;
+font-weight:800;
+letter-spacing:3px;
+}
+
+.visual-orbit {
+position:absolute;
+width:350px;
+height:350px;
+border:1px solid #ffffff30;
+border-radius:50%;
+animation:rotate 30s linear infinite;
+}
+
+.floating {
+position:absolute;
+background:white;
+color:var(--navy);
+padding:13px 17px;
+border-radius:12px;
+font-size:11px;
+font-weight:800;
+box-shadow:0 10px 30px #0003;
+}
+
+.float-one {
+top:40px;
+right:0;
+}
+
+.float-two {
+bottom:35px;
+left:0;
+}
+
+/* GENERAL */
+
+section {
+padding:95px 0;
+}
+
+.section-label {
+color:var(--blue);
+font-size:10px;
+letter-spacing:3px;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.section-title {
+font-family:Manrope,sans-serif;
+font-size:clamp(32px,4vw,46px);
+letter-spacing:-1.8px;
+line-height:1.2;
+color:var(--navy);
+}
+
+.section-description {
+color:var(--gray);
+font-size:14px;
+line-height:1.9;
+margin-top:15px;
+max-width:650px;
+}
+
+.section-heading {
+margin-bottom:42px;
+}
+
+/* SERVICES */
+
+.services-grid {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.service-card {
+padding:30px;
+border:1px solid #e8edf5;
+border-radius:18px;
+transition:.35s;
+}
+
+.service-card:hover {
+transform:translateY(-7px);
+box-shadow:0 20px 50px #07152f12;
+border-color:#a9cbf7;
+}
+
+.service-icon {
+width:45px;
+height:45px;
+border-radius:13px;
+background:var(--light);
+display:grid;
+place-items:center;
+color:var(--blue);
+font-size:21px;
+margin-bottom:22px;
+}
+
+.service-card h3 {
+font-family:Manrope;
+font-size:18px;
+color:var(--navy);
+margin-bottom:12px;
+}
+
+.service-card p {
+font-size:13px;
+line-height:1.8;
+color:var(--gray);
+}
+
+.service-card a {
+display:inline-block;
+margin-top:20px;
+font-size:12px;
+font-weight:800;
+color:var(--blue);
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+background:#f6f8fc;
+}
+
+.portfolio-grid {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.portfolio-item {
+height:300px;
+border-radius:20px;
+background:linear-gradient(145deg,#9ac8f4,#173b70);
+display:flex;
+align-items:flex-end;
+padding:25px;
+position:relative;
+overflow:hidden;
+color:white;
+transition:.4s;
+}
+
+.portfolio-item:nth-child(2) {
+background:linear-gradient(145deg,#d6b5a0,#493044);
+}
+
+.portfolio-item:nth-child(3) {
+background:linear-gradient(145deg,#9daecb,#182b50);
+}
+
+.portfolio-item:hover {
+transform:translateY(-6px);
+}
+
+.portfolio-item div {
+position:relative;
+z-index:2;
+}
+
+.portfolio-item h3 {
+font-family:Manrope;
+font-size:21px;
+}
+
+.portfolio-item p {
+font-size:11px;
+color:#e0eaff;
+margin-top:5px;
+}
+
+/* ACADEMY */
+
+.academy {
+background:var(--navy);
+color:white;
+}
+
+.academy .section-title {
+color:white;
+}
+
+.academy .section-description {
+color:#b5c5df;
+}
+
+.course-grid {
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.course-card {
+background:#ffffff0c;
+border:1px solid #ffffff20;
+border-radius:18px;
+padding:23px;
+transition:.3s;
+}
+
+.course-card:hover {
+background:#ffffff16;
+transform:translateY(-6px);
+}
+
+.course-card small {
+color:#8ebeff;
+font-weight:800;
+letter-spacing:2px;
+font-size:9px;
+}
+
+.course-card h3 {
+font-family:Manrope;
+font-size:18px;
+margin:20px 0 12px;
+}
+
+.course-card p {
+font-size:12px;
+line-height:1.8;
+color:#b5c5df;
+}
+
+.price {
+font-family:Manrope;
+font-size:23px;
+font-weight:800;
+margin-top:25px;
+}
+
+.course-card a {
+display:block;
+margin-top:15px;
+color:#8ebeff;
+font-size:12px;
+font-weight:800;
+}
+
+/* STORE */
+
+.store-grid {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.store-card {
+border:1px solid #e7edf5;
+padding:28px;
+border-radius:18px;
+}
+
+.store-card h3 {
+font-family:Manrope;
+font-size:18px;
+color:var(--navy);
+margin:15px 0 10px;
+}
+
+.store-card p {
+font-size:13px;
+line-height:1.8;
+color:var(--gray);
+}
+
+.store-card a {
+display:inline-block;
+margin-top:20px;
+color:var(--blue);
+font-size:12px;
+font-weight:800;
+}
+
+/* ABOUT */
+
+.about {
+background:#f6f8fc;
+}
+
+.about-grid {
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about-art {
+min-height:330px;
+border-radius:25px;
+background:linear-gradient(140deg,#9bc9f6,#153b77,#07152f);
+display:grid;
+place-items:center;
+color:#ffffff55;
+font-family:Manrope;
+font-weight:800;
+font-size:70px;
+letter-spacing:-7px;
+}
+
+.about-copy p {
+font-size:14px;
+line-height:2;
+color:var(--gray);
+margin-top:18px;
+}
+
+/* PROCESS */
+
+.steps {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.step {
+border-top:2px solid #d9e8fa;
+padding:25px 5px;
+}
+
+.step strong {
+font-family:Manrope;
+font-size:35px;
+color:#a7c9f3;
+}
+
+.step h3 {
+font-size:18px;
+margin:12px 0;
+color:var(--navy);
+}
+
+.step p {
+font-size:13px;
+color:var(--gray);
+line-height:1.8;
+}
+
+/* CONTACT */
+
+.contact {
+background:#f6f8fc;
+}
+
+.contact-box {
+background:white;
+border:1px solid #e6edf6;
+border-radius:24px;
+padding:45px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+box-shadow:0 20px 60px #07152f0b;
+}
+
+.contact-box p {
+max-width:620px;
+color:var(--gray);
+font-size:14px;
+line-height:1.9;
+margin-top:15px;
+}
+
+.contact-links {
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:22px;
+}
+
+.contact-links a {
+border:1px solid #dce6f3;
+border-radius:30px;
+padding:9px 14px;
+font-size:11px;
+font-weight:800;
+color:#34557e;
+transition:.3s;
+}
+
+.contact-links a:hover {
+background:var(--light);
+}
+
+.contact-button {
+white-space:nowrap;
+}
+
+/* FOOTER */
+
+footer {
+background:#061127;
+color:#a9bad3;
+padding:50px 0 25px;
+}
+
+.footer-top {
+display:flex;
+justify-content:space-between;
+gap:30px;
+flex-wrap:wrap;
+padding-bottom:35px;
+border-bottom:1px solid #ffffff20;
+}
+
+.footer-brand {
+font-family:Manrope;
+font-size:20px;
+font-weight:800;
+color:white;
+}
+
+.footer-brand span {
+color:#70adff;
+}
+
+.footer-description {
+font-size:12px;
+max-width:320px;
+margin-top:13px;
+line-height:1.8;
+}
+
+.footer-links {
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+font-size:12px;
+font-weight:700;
+}
+
+.footer-links a:hover {
+color:white;
+}
+
+.copyright {
+display:flex;
+justify-content:space-between;
+gap:15px;
+flex-wrap:wrap;
+padding-top:22px;
+font-size:10px;
+color:#7186a6;
+}
+
+/* ANIMATIONS */
+
+.reveal {
+opacity:0;
+transform:translateY(25px);
+transition:opacity .8s ease,transform .8s ease;
+}
+
+.reveal.show {
+opacity:1;
+transform:translateY(0);
+}
+
+@keyframes float {
+0%,100% {transform:translateY(0) rotate(3deg)}
+50% {transform:translateY(-13px) rotate(1deg)}
+}
+
+@keyframes rotate {
+to {transform:rotate(360deg)}
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+.nav-links {gap:12px}
+.nav-links a {font-size:10px}
+.course-grid {grid-template-columns:repeat(2,1fr)}
+.services-grid {grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:680px) {
+header {height:68px}
+.menu {display:block}
+.nav-button {display:none}
+.nav-links {
+display:none;
+position:absolute;
+top:68px;
+left:0;
+right:0;
+background:white;
+padding:20px 6%;
+box-shadow:0 15px 25px #07152f18;
+flex-direction:column;
+align-items:stretch;
+gap:0;
+}
+.nav-links.open {display:flex}
+.nav-links a {
+padding:13px 0;
+border-bottom:1px solid #edf0f5;
+font-size:13px;
+}
+.hero {padding:75px 0 60px}
+.hero-grid {grid-template-columns:1fr}
+.hero h1 {font-size:46px}
+.hero-visual {height:340px}
+.visual-box {width:245px;height:300px}
+.visual-orbit {width:290px;height:290px}
+section {padding:70px 0}
+.services-grid,.store-grid,.portfolio-grid {grid-template-columns:1fr}
+.portfolio-item {height:250px}
+.course-grid {grid-template-columns:1fr 1fr}
+.about-grid {grid-template-columns:1fr;gap:30px}
+.about-art {min-height:250px;font-size:55px}
+.steps {grid-template-columns:1fr;gap:0}
+.contact-box {flex-direction:column;align-items:flex-start;padding:28px}
+.contact-button {width:100%;text-align:center}
+.footer-top {flex-direction:column}
+}
+
+@media(max-width:390px) {
+.hero h1 {font-size:39px}
+.course-grid {grid-template-columns:1fr}
+}
+
+@media(prefers-reduced-motion:reduce) {
+*,*::before,*::after {
+animation:none!important;
+transition:none!important;
+scroll-behavior:auto!important;
+}
+.reveal {opacity:1;transform:none}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="announcement">
+  Fãtzy Visuals — Creative thinking. Distinctive visuals.
+  <a href="#services">Explore our services ↗</a>
+</div>
+
+<header>
+  <nav class="container">
+
+    <a href="#home" class="logo">
+      <span>FÃTZY VISUALS</span>
+      <small>CREATIVE STUDIO</small>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#academy">Academy</a>
+      <a href="#store">Digital Store</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <a href="#contact" class="nav-button">Start a Project ↗</a>
+
+    <button class="menu" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="container hero-grid">
+
+    <div class="reveal">
+
+      <div class="tag">AI-POWERED CREATIVE STUDIO</div>
+
+      <h1>
+        Ideas deserve to look
+        <span>extraordinary.</span>
+      </h1>
+
+      <p>
+        We transform ideas into remarkable visuals, engaging videos
+        and digital experiences. From brand content to AI education,
+        we help creativity make an impact.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#services" class="button">Explore Services ↗</a>
+        <a href="#work" class="outline">View Our Work</a>
+      </div>
+
+    </div>
+
+    <div class="hero-visual reveal">
+
+      <div class="visual-orbit"></div>
+
+      <div class="visual-box">
+        <span>FÃTZY VISUALS<br>CREATIVE STUDIO</span>
+      </div>
+
+      <div class="floating float-one">✦ Visual storytelling</div>
+      <div class="floating float-two">Creative without limits.</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <div class="section-label">WHAT WE DO</div>
+
+      <h2 class="section-title">
+        Creative solutions for modern brands.
+      </h2>
+
+      <p class="section-description">
+        We help businesses, creators and brands communicate
+        through thoughtful visual content and digital creativity.
+      </p>
+
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card reveal">
+        <div class="service-icon">✦</div>
+        <h3>AI Image Creation</h3>
+        <p>Premium AI portraits, editorial photography, campaign visuals and creative imagery.</p>
+        <a href="#contact">Discuss a project ↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">▶</div>
+        <h3>AI Video Creation</h3>
+        <p>Engaging AI videos, product motion, creative transitions and visual storytelling.</p>
+        <a href="#contact">Discuss a project ↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">▧</div>
+        <h3>Product Photography</h3>
+        <p>Creative product visuals and advertising concepts that give products a distinctive presence.</p>
+        <a href="#contact">Discuss a project ↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">▤</div>
+        <h3>Social Media Content</h3>
+        <p>Flyers, promotional designs, branded graphics and content for digital platforms.</p>
+        <a href="#contact">Discuss a project ↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">⌘</div>
+        <h3>Website Development</h3>
+        <p>Modern, responsive websites that help businesses establish a professional online presence.</p>
+        <a href="#contact">Discuss a project ↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">✧</div>
+        <h3>Custom Creative Projects</h3>
+        <p>Have a unique idea? Let's develop a creative solution around your vision.</p>
+        <a href="#contact">Tell us your idea ↗</a>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="portfolio" id="work">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <div class="section-label">OUR CREATIVE WORLD</div>
+
+      <h2 class="section-title">
+        Visuals that make people pause.
+      </h2>
+
+      <p class="section-description">
+        Explore our creative direction across AI imagery,
+        product storytelling and digital creativity.
+      </p>
+
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item reveal">
+        <div>
+          <h3>AI Campaign Imagery</h3>
+          <p>Creative visual storytelling</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal">
+        <div>
+          <h3>Product Visuals</h3>
+          <p>Product-focused creativity</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal">
+        <div>
+          <h3>Creative Concepts</h3>
+          <p>Ideas beyond ordinary</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ACADEMY -->
+
+<section class="academy" id="academy">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <div class="section-label">FÃTZY VISUALS ACADEMY</div>
+
+      <h2 class="section-title">
+        Learn. Create. Improve.
+      </h2>
+
+      <p class="section-description">
+        Practical AI education designed to help aspiring
+        creators understand modern creative tools and techniques.
+      </p>
+
+    </div>
+
+    <div class="course-grid">
+
+      <article class="course-card reveal">
+        <small>IMAGE CREATION</small>
+        <h3>AI Image Creation Class</h3>
+        <p>Learn AI image creation, prompting, composition and visual direction. Includes PDF resources and support group.</p>
+        <div class="price">₦5,000</div>
+        <a href="mailto:Fatzyvisuals@gmail.com?subject=AI%20Image%20Creation">Enquire ↗</a>
+      </article>
+
+      <article class="course-card reveal">
+        <small>PERSONAL TRAINING</small>
+        <h3>One-on-One Training</h3>
+        <p>Get individual guidance and learn the fundamentals of creating better AI images.</p>
+        <div class="price">₦6,500</div>
+        <a href="mailto:Fatzyvisuals@gmail.com?subject=One%20on%20One%20Training">Enquire ↗</a>
+      </article>
+
+      <article class="course-card reveal">
+        <small>VIDEO CREATION</small>
+        <h3>AI Video Creation</h3>
+        <p>Understand AI video workflows and turn creative concepts into engaging videos.</p>
+        <div class="price">₦8,500</div>
+        <a href="mailto:Fatzyvisuals@gmail.com?subject=AI%20Video%20Course">Enquire ↗</a>
+      </article>
+
+      <article class="course-card reveal">
+        <small>DIGITAL RESOURCE</small>
+        <h3>500 Premium Prompts</h3>
+        <p>A collection of creative prompt ideas for different image-generation projects.</p>
+        <div class="price">₦3,000</div>
+        <a href="mailto:Fatzyvisuals@gmail.com?subject=Premium%20Prompts">Enquire ↗</a>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DIGITAL STORE -->
+
+<section id="store">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <div class="section-label">DIGITAL STORE</div>
+
+      <h2 class="section-title">
+        Resources for your creative journey.
+      </h2>
+
+      <p class="section-description">
+        Explore digital resources designed to make
+        your creative workflow easier.
+      </p>
+
+    </div>
+
+    <div class="store-grid">
+
+      <article class="store-card reveal">
+        <div class="service-icon">▤</div>
+        <h3>AI Image Creation PDF</h3>
+        <p>A practical learning resource for aspiring AI image creators.</p>
+        <a href="mailto:Fatzyvisuals@gmail.com?subject=Image%20Creation%20PDF">Get information ↗</a>
+      </article>
+
+      <article class="store-card reveal">
+        <div class="service-icon">✧</div>
+        <h3>Premium Prompt Collection</h3>
+        <p>Creative prompt ideas for portraits, products and visual concepts.</p>
+        <a href="mailto:Fatzyvisuals@gmail.com?subject=Prompt%20Collection">Get information ↗</a>
+      </article>
+
+      <article class="store-card reveal">
+        <div class="service-icon">＋</div>
+        <h3>More Digital Products</h3>
+        <p>Additional creative resources and digital products coming soon.</p>
+        <a href="mailto:Fatzyvisuals@gmail.com?subject=Digital%20Store">Stay informed ↗</a>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+  <div class="container about-grid">
+
+    <div class="about-art reveal">FV</div>
+
+    <div class="reveal">
+
+      <div class="section-label">ABOUT FÃTZY VISUALS</div>
+
+      <h2 class="section-title">
+        Creativity with a clear purpose.
+      </h2>
+
+      <p class="section-description">
+        Fãtzy Visuals is an AI-powered creative brand
+        focused on visual storytelling, digital experiences
+        and creative education.
+      </p>
+
+      <p class="section-description">
+        We believe technology should expand what people
+        can imagine and create. Our goal is to help brands
+        communicate better and creators develop practical
+        creative skills.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROCESS -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <div class="section-label">OUR PROCESS</div>
+
+      <h2 class="section-title">
+        From idea to execution.
+      </h2>
+
+    </div>
+
+    <div class="steps">
+
+      <div class="step reveal">
+        <strong>01</strong>
+        <h3>Tell us your idea</h3>
+        <p>Share your creative brief, goals and references.</p>
+      </div>
+
+      <div class="step reveal">
+        <strong>02</strong>
+        <h3>We plan the direction</h3>
+        <p>We discuss the approach, pricing and timeline.</p>
+      </div>
+
+      <div class="step reveal">
+        <strong>03</strong>
+        <h3>We create</h3>
+        <p>Your project moves from concept to delivery.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="contact-box reveal">
+
+      <div>
+
+        <div class="section-label">LET'S WORK TOGETHER</div>
+
+        <h2 class="section-title">
+          Have an idea? Let's create it.
+        </h2>
+
+        <p>
+          Whether you're a business looking for creative
+          services, a creator interested in learning AI,
+          or someone with a unique project, we'd love
+          to hear from you.
+        </p>
+
+        <p>
+          <strong>International customers:</strong>
+          For payment options outside Nigeria, please
+          contact us through email before making payment.
+        </p>
+
+        <div class="contact-links">
+
+          <a href="https://www.instagram.com/fatzyvisuals/"
+             target="_blank" rel="noopener">Instagram ↗</a>
+
+          <a href="https://www.facebook.com/share/1EFvZv3bxG/"
+             target="_blank" rel="noopener">Facebook ↗</a>
+
+          <a href="https://x.com/fatzyvisuals"
+             target="_blank" rel="noopener">X ↗</a>
+
+          <a href="https://whatsapp.com/channel/0029VbCey96KAwEl67qg5"
+             target="_blank" rel="noopener">WhatsApp Channel ↗</a>
+
+        </div>
+
+      </div>
+
+      <a class="button contact-button"
+         href="mailto:Fatzyvisuals@gmail.com?subject=F%C3%A3tzy%20Visuals%20Enquiry">
+         Email the studio ↗
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div>
+
+        <div class="footer-brand">
+          FÃTZY <span>VISUALS</span>
+        </div>
+
+        <p class="footer-description">
+          An AI-powered creative studio and learning
+          space for brands, businesses and creators.
+        </p>
+
+      </div>
+
+      <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#academy">Academy</a>
+        <a href="#store">Digital Store</a>
+        <a href="#contact">Contact</a>
+
+      </div>
+
+    </div>
+
+    <div class="copyright">
+
+      <span>
+        © <span id="year"></span> Fãtzy Visuals.
+        All rights reserved.
+      </span>
+
+      <span>Creative thinking. Distinctive visuals.</span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+
+// MOBILE NAVIGATION
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+
+  const isOpen = navLinks.classList.toggle("open");
+
+  menuBtn.textContent = isOpen ? "×" : "☰";
+
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    navLinks.classList.remove("open");
+    menuBtn.textContent = "☰";
+
+  });
+
+});
+
+// AUTOMATIC COPYRIGHT YEAR
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+// SCROLL ANIMATIONS
+
+const observer = new IntersectionObserver(entries => {
+
+  entries.forEach(entry => {
+
+    if (entry.isIntersecting) {
+
+      entry.target.classList.add("show");
+
+      observer.unobserve(entry.target);
+
+    }
+
+  });
+
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(element => {
+
+  observer.observe(element);
+
+});
+
+</script>
+
+</body>
+</html>
