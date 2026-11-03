@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07152f">
+
+<title>Fãtzy Visuals | Premium AI Creative Studio</title>
+<meta name="description" content="Fãtzy Visuals is an AI-powered creative studio offering premium AI visuals, video creation, brand content, digital experiences and AI education.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+--navy:#07152f;
+--navy2:#0b2045;
+--blue:#397ee8;
+--light:#eef5ff;
+--white:#ffffff;
+--gray:#778399;
+--dark:#101c33;
+}
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html {
+scroll-behavior:smooth;
+scroll-padding-top:85px;
+}
+
+body {
+font-family:'DM Sans',sans-serif;
+color:var(--dark);
+overflow-x:hidden;
+background:white;
+}
+
+a {
+text-decoration:none;
+color:inherit;
+}
+
+button,input {
+font:inherit;
+}
+
+.container {
+width:min(1160px,90%);
+margin:auto;
+}
+
+/* ANNOUNCEMENT */
+
+.announcement {
+background:#061127;
+color:#dce9ff;
+text-align:center;
+padding:9px 15px;
+font-size:11px;
+}
+
+.announcement a {
+color:#8ebeff;
+font-weight:800;
+margin-left:8px;
+}
+
+/* HEADER */
+
+header {
+height:70px;
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(255,255,255,.93);
+backdrop-filter:blur(18px);
+border-bottom:1px solid #e9edf4;
+transition:.3s;
+}
+
+header.scrolled {
+box-shadow:0 8px 30px #07152f12;
+}
+
+nav {
+height:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo {
+font-family:Manrope,sans-serif;
+font-weight:800;
+font-size:18px;
+color:var(--navy);
+letter-spacing:-1px;
+}
+
+.logo span {
+color:var(--blue);
+}
+
+.logo small {
+display:block;
+font-size:8px;
+letter-spacing:3px;
+color:#78869d;
+}
+
+.nav-links {
+display:flex;
+gap:23px;
+align-items:center;
+}
+
+.nav-links a {
+font-size:11px;
+font-weight:800;
+color:#536079;
+transition:.3s;
+}
+
+.nav-links a:hover {
+color:var(--blue);
+}
+
+.nav-button,.button {
+display:inline-flex;
+align-items:center;
+justify-content:center;
+background:var(--blue);
+color:white;
+padding:13px 22px;
+border-radius:50px;
+font-size:12px;
+font-weight:800;
+transition:.3s;
+border:0;
+cursor:pointer;
+}
+
+.nav-button:hover,.button:hover {
+transform:translateY(-3px);
+box-shadow:0 12px 28px #397ee844;
+}
+
+.menu {
+display:none;
+border:0;
+background:none;
+font-size:25px;
+color:var(--navy);
+}
+
+/* HERO */
+
+.hero {
+background:
+radial-gradient(circle at 80% 20%,#183b71,transparent 35%),
+linear-gradient(120deg,#061329,#0b2045);
+color:white;
+padding:105px 0;
+position:relative;
+overflow:hidden;
+}
+
+.hero::before {
+content:"";
+position:absolute;
+width:650px;
+height:650px;
+right:-240px;
+top:-210px;
+border:1px solid #ffffff15;
+border-radius:50%;
+animation:rotate 40s linear infinite;
+}
+
+.hero-grid {
+display:grid;
+grid-template-columns:1.1fr .9fr;
+align-items:center;
+gap:55px;
+}
+
+.tag {
+font-size:10px;
+letter-spacing:3px;
+color:#8ebeff;
+font-weight:800;
+margin-bottom:23px;
+}
+
+.hero h1 {
+font-family:Manrope,sans-serif;
+font-size:clamp(43px,6vw,72px);
+line-height:1.1;
+letter-spacing:-3px;
+}
+
+.hero h1 span {
+color:#82b9ff;
+}
+
+.hero p {
+color:#bdcbe1;
+font-size:15px;
+line-height:1.9;
+margin:24px 0 30px;
+max-width:520px;
+}
+
+.hero-buttons {
+display:flex;
+gap:13px;
+flex-wrap:wrap;
+}
+
+.outline {
+border:1px solid #ffffff55;
+padding:13px 23px;
+border-radius:50px;
+font-size:12px;
+font-weight:800;
+transition:.3s;
+}
+
+.outline:hover {
+background:#ffffff15;
+transform:translateY(-3px);
+}
+
+.hero-visual {
+height:390px;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+.visual-box {
+width:290px;
+height:350px;
+border-radius:25px;
+background:linear-gradient(145deg,#9bc9f6,#183d76,#07152f);
+display:flex;
+align-items:flex-end;
+padding:25px;
+box-shadow:0 30px 80px #0008;
+transform:rotate(3deg);
+animation:float 5s ease-in-out infinite;
+position:relative;
+overflow:hidden;
+}
+
+.visual-box span {
+font-size:12px;
+font-weight:800;
+letter-spacing:3px;
+}
+
+.visual-orbit {
+position:absolute;
+width:350px;
+height:350px;
+border:1px solid #ffffff30;
+border-radius:50%;
+animation:rotate 30s linear infinite;
+}
+
+.floating {
+position:absolute;
+background:white;
+color:var(--navy);
+padding:13px 17px;
+border-radius:12px;
+font-size:11px;
+font-weight:800;
+box-shadow:0 10px 30px #0003;
+animation:bob 4s ease-in-out infinite;
+}
+
+.float-one {
+top:40px;
+right:0;
+}
+
+.float-two {
+bottom:35px;
+left:0;
+animation-delay:1s;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+padding:95px 0;
+}
+
+.section-label {
+color:var(--blue);
+font-size:10px;
+letter-spacing:3px;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.section-title {
+font-family:Manrope,sans-serif;
+font-size:clamp(32px,4vw,46px);
+letter-spacing:-1.8px;
+line-height:1.2;
+color:var(--navy);
+}
+
+.section-description {
+color:var(--gray);
+font-size:14px;
+line-height:1.9;
+margin-top:15px;
+max-width:650px;
+}
+
+.section-heading {
+margin-bottom:42px;
+}
+
+/* SERVICES */
+
+.services-grid {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.service-card {
+padding:30px;
+border:1px solid #e8edf5;
+border-radius:18px;
+background:white;
+transition:.4s;
+position:relative;
+overflow:hidden;
+}
+
+.service-card:hover {
+transform:translateY(-9px);
+box-shadow:0 20px 50px #07152f12;
+border-color:#a9cbf7;
+}
+
+.service-icon {
+width:45px;
+height:45px;
+border-radius:13px;
+background:var(--light);
+display:grid;
+place-items:center;
+color:var(--blue);
+font-size:21px;
+margin-bottom:22px;
+transition:.4s;
+}
+
+.service-card:hover .service-icon {
+transform:rotate(-10deg) scale(1.1);
+}
+
+.service-card h3 {
+font-family:Manrope;
+font-size:18px;
+color:var(--navy);
+margin-bottom:12px;
+}
+
+.service-card p {
+font-size:13px;
+line-height:1.8;
+color:var(--gray);
+}
+
+.service-card a {
+display:inline-block;
+margin-top:20px;
+font-size:12px;
+font-weight:800;
+color:var(--blue);
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+background:#f6f8fc;
+}
+
+.portfolio-grid {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.portfolio-item {
+height:300px;
+border-radius:20px;
+background:linear-gradient(145deg,#9ac8f4,#173b70);
+display:flex;
+align-items:flex-end;
+padding:25px;
+position:relative;
+overflow:hidden;
+color:white;
+transition:.4s;
+}
+
+.portfolio-item:nth-child(2) {
+background:linear-gradient(145deg,#d6b5a0,#493044);
+}
+
+.portfolio-item:nth-child(3) {
+background:linear-gradient(145deg,#9daecb,#182b50);
+}
+
+.portfolio-item:hover {
+transform:translateY(-8px);
+}
+
+.portfolio-item h3 {
+font-family:Manrope;
+font-size:21px;
+}
+
+.portfolio-item p {
+font-size:11px;
+color:#e0eaff;
+margin-top:5px;
+}
+
+/* ACADEMY */
+
+.academy {
+background:linear-gradient(125deg,#061127,#0b2045);
+color:white;
+}
+
+.academy .section-title {
+color:white;
+}
+
+.academy .section-description {
+color:#b5c5df;
+}
+
+.course-grid {
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.course-card {
+background:#ffffff0c;
+border:1px solid #ffffff20;
+border-radius:18px;
+padding:23px;
+transition:.4s;
+}
+
+.course-card:hover {
+background:#ffffff16;
+transform:translateY(-8px);
+border-color:#82b9ff77;
+}
+
+.course-card small {
+color:#8ebeff;
+font-weight:800;
+letter-spacing:2px;
+font-size:9px;
+}
+
+.course-card h3 {
+font-family:Manrope;
+font-size:18px;
+margin:20px 0 12px;
+}
+
+.course-card p {
+font-size:12px;
+line-height:1.8;
+color:#b5c5df;
+}
+
+.price {
+font-family:Manrope;
+font-size:23px;
+font-weight:800;
+margin-top:22px;
+}
+
+.enroll-btn {
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:17px;
+width:100%;
+padding:13px;
+border-radius:40px;
+background:var(--blue);
+color:white;
+font-size:11px;
+font-weight:800;
+transition:.3s;
+border:0;
+cursor:pointer;
+}
+
+.enroll-btn:hover {
+background:#6ba2f5;
+transform:translateY(-3px);
+box-shadow:0 8px 22px #397ee844;
+}
+
+/* STORE */
+
+.store-grid {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.store-card {
+border:1px solid #e7edf5;
+padding:28px;
+border-radius:18px;
+transition:.4s;
+}
+
+.store-card:hover {
+transform:translateY(-8px);
+box-shadow:0 18px 45px #07152f10;
+border-color:#a9cbf7;
+}
+
+.store-card h3 {
+font-family:Manrope;
+font-size:18px;
+color:var(--navy);
+margin:15px 0 10px;
+}
+
+.store-card p {
+font-size:13px;
+line-height:1.8;
+color:var(--gray);
+}
+
+.store-card .price {
+color:var(--navy);
+}
+
+/* ABOUT */
+
+.about {
+background:#f6f8fc;
+}
+
+.about-grid {
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about-art {
+min-height:330px;
+border-radius:25px;
+background:linear-gradient(140deg,#9bc9f6,#153b77,#07152f);
+display:grid;
+place-items:center;
+color:white;
+font-family:Manrope;
+font-weight:800;
+font-size:70px;
+letter-spacing:-7px;
+position:relative;
+overflow:hidden;
+}
+
+.about-art::before,
+.about-art::after {
+content:"";
+position:absolute;
+width:240px;
+height:240px;
+border:1px solid #ffffff40;
+border-radius:50%;
+animation:rotate 25s linear infinite;
+}
+
+.about-art::after {
+width:310px;
+height:310px;
+}
+
+.about-art span {
+z-index:1;
+}
+
+.about-copy p {
+font-size:14px;
+line-height:2;
+color:var(--gray);
+margin-top:18px;
+}
+
+/* PROCESS */
+
+.steps {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.step {
+border-top:2px solid #d9e8fa;
+padding:25px 5px;
+transition:.3s;
+}
+
+.step:hover {
+border-color:var(--blue);
+}
+
+.step strong {
+font-family:Manrope;
+font-size:35px;
+color:#a7c9f3;
+}
+
+.step h3 {
+font-size:18px;
+margin:12px 0;
+color:var(--navy);
+}
+
+.step p {
+font-size:13px;
+color:var(--gray);
+line-height:1.8;
+}
+
+/* CONTACT */
+
+.contact {
+background:#f6f8fc;
+}
+
+.contact-box {
+background:white;
+border:1px solid #e6edf6;
+border-radius:24px;
+padding:45px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+box-shadow:0 20px 60px #07152f0b;
+}
+
+.contact-box p {
+max-width:620px;
+color:var(--gray);
+font-size:14px;
+line-height:1.9;
+margin-top:15px;
+}
+
+.contact-links {
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:22px;
+}
+
+.contact-links a {
+border:1px solid #dce6f3;
+border-radius:30px;
+padding:9px 14px;
+font-size:11px;
+font-weight:800;
+color:#34557e;
+transition:.3s;
+}
+
+.contact-links a:hover {
+background:var(--light);
+transform:translateY(-3px);
+}
+
+/* FOOTER */
+
+footer {
+background:#061127;
+color:#a9bad3;
+padding:50px 0 25px;
+}
+
+.footer-top {
+display:flex;
+justify-content:space-between;
+gap:30px;
+flex-wrap:wrap;
+padding-bottom:35px;
+border-bottom:1px solid #ffffff20;
+}
+
+.footer-brand {
+font-family:Manrope;
+font-size:20px;
+font-weight:800;
+color:white;
+}
+
+.footer-brand span {
+color:#70adff;
+}
+
+.footer-description {
+font-size:12px;
+max-width:320px;
+margin-top:13px;
+line-height:1.8;
+}
+
+.footer-links {
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+font-size:12px;
+font-weight:700;
+}
+
+.copyright {
+display:flex;
+justify-content:space-between;
+gap:15px;
+flex-wrap:wrap;
+padding-top:22px;
+font-size:10px;
+color:#7186a6;
+}
+
+/* CHECKOUT MODAL */
+
+.checkout-overlay {
+position:fixed;
+inset:0;
+background:rgba(3,12,29,.78);
+backdrop-filter:blur(9px);
+z-index:2000;
+display:none;
+align-items:center;
+justify-content:center;
+padding:18px;
+overflow-y:auto;
+}
+
+.checkout-overlay.open {
+display:flex;
+animation:fadeIn .25s ease;
+}
+
+.checkout-panel {
+width:min(520px,100%);
+background:white;
+border-radius:23px;
+overflow:hidden;
+box-shadow:0 30px 100px #0005;
+animation:panelIn .35s ease;
+margin:auto;
+}
+
+.checkout-head {
+background:linear-gradient(125deg,#061329,#0b2854);
+color:white;
+padding:25px 28px;
+position:relative;
+}
+
+.checkout-head small {
+color:#8ebeff;
+font-size:9px;
+font-weight:800;
+letter-spacing:2px;
+}
+
+.checkout-head h2 {
+font-family:Manrope;
+font-size:25px;
+margin-top:8px;
+}
+
+.checkout-head p {
+color:#c2d0e5;
+font-size:12px;
+margin-top:6px;
+line-height:1.6;
+}
+
+.close-checkout {
+position:absolute;
+right:18px;
+top:17px;
+width:34px;
+height:34px;
+border:1px solid #ffffff40;
+background:#ffffff12;
+color:white;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+}
+
+.checkout-body {
+padding:25px 28px 28px;
+}
+
+.selected-product {
+background:#f1f6ff;
+border:1px solid #dce9fc;
+border-radius:13px;
+padding:15px;
+display:flex;
+justify-content:space-between;
+gap:12px;
+align-items:center;
+}
+
+.selected-product span {
+font-size:12px;
+color:#61718b;
+font-weight:700;
+}
+
+.selected-product strong {
+font-family:Manrope;
+color:var(--navy);
+font-size:19px;
+}
+
+.payment-title {
+font-size:11px;
+letter-spacing:1.5px;
+font-weight:800;
+color:var(--blue);
+margin:22px 0 12px;
+}
+
+.account-card {
+border:1px solid #e4eaf3;
+border-radius:13px;
+padding:14px 15px;
+margin-bottom:10px;
+}
+
+.account-top {
+display:flex;
+justify-content:space-between;
+gap:10px;
+align-items:center;
+}
+
+.account-top strong {
+font-size:13px;
+color:var(--navy);
+}
+
+.copy-btn {
+border:1px solid #d7e4f7;
+background:#f5f9ff;
+color:#2869d1;
+padding:8px 11px;
+border-radius:8px;
+font-size:10px;
+font-weight:800;
+cursor:pointer;
+}
+
+.account-number {
+font-family:Manrope;
+font-weight:800;
+font-size:20px;
+letter-spacing:1px;
+color:#172c4d;
+margin-top:8px;
+}
+
+.account-name {
+font-size:11px;
+color:#6f7d92;
+margin-top:4px;
+}
+
+.payment-note {
+font-size:11px;
+line-height:1.7;
+color:#778399;
+margin:14px 0 17px;
+}
+
+.customer-label {
+display:block;
+font-size:11px;
+font-weight:800;
+color:#35435b;
+margin-bottom:7px;
+}
+
+.customer-input {
+width:100%;
+border:1px solid #dce4ef;
+border-radius:10px;
+padding:12px 13px;
+font-size:13px;
+outline:none;
+}
+
+.customer-input:focus {
+border-color:var(--blue);
+box-shadow:0 0 0 3px #397ee818;
+}
+
+.paid-btn {
+width:100%;
+border:0;
+background:#18a66a;
+color:white;
+border-radius:11px;
+padding:15px;
+font-size:12px;
+font-weight:800;
+margin-top:15px;
+transition:.3s;
+cursor:pointer;
+}
+
+.paid-btn:hover {
+background:#128957;
+transform:translateY(-2px);
+}
+
+.international-note {
+text-align:center;
+font-size:10px;
+color:#8995a7;
+line-height:1.6;
+margin-top:13px;
+}
+
+.international-note a {
+color:var(--blue);
+font-weight:800;
+}
+
+.toast {
+position:fixed;
+left:50%;
+bottom:25px;
+transform:translate(-50%,20px);
+background:#07152f;
+color:white;
+padding:12px 18px;
+border-radius:40px;
+font-size:12px;
+z-index:3000;
+opacity:0;
+pointer-events:none;
+transition:.3s;
+}
+
+.toast.show {
+opacity:1;
+transform:translate(-50%,0);
+}
+
+/* SCROLL ANIMATIONS */
+
+.reveal {
+opacity:0;
+transform:translateY(28px);
+transition:opacity .8s ease,transform .8s ease;
+}
+
+.reveal.show {
+opacity:1;
+transform:translateY(0);
+}
+
+@keyframes float {
+0%,100% {transform:translateY(0) rotate(3deg)}
+50% {transform:translateY(-15px) rotate(1deg)}
+}
+
+@keyframes rotate {
+to {transform:rotate(360deg)}
+}
+
+@keyframes bob {
+0%,100% {transform:translateY(0)}
+50% {transform:translateY(-9px)}
+}
+
+@keyframes fadeIn {
+from {opacity:0}
+to {opacity:1}
+}
+
+@keyframes panelIn {
+from {opacity:0;transform:translateY(20px) scale(.98)}
+to {opacity:1;transform:translateY(0) scale(1)}
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px) {
+.nav-links {gap:12px}
+.nav-links a {font-size:10px}
+.course-grid {grid-template-columns:repeat(2,1fr)}
+.services-grid {grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:700px) {
+header {height:66px}
+.menu {display:block}
+.nav-button {display:none}
+
+.nav-links {
+display:none;
+position:absolute;
+top:66px;
+left:0;
+right:0;
+background:white;
+padding:15px 6%;
+box-shadow:0 15px 25px #07152f18;
+flex-direction:column;
+align-items:stretch;
+gap:0;
+}
+
+.nav-links.open {display:flex}
+
+.nav-links a {
+padding:13px 0;
+border-bottom:1px solid #edf0f5;
+font-size:13px;
+}
+
+.hero {padding:75px 0 55px}
+.hero-grid {grid-template-columns:1fr;gap:20px}
+.hero h1 {font-size:46px}
+.hero-visual {height:330px}
+.visual-box {width:230px;height:285px}
+.visual-orbit {width:285px;height:285px}
+
+section {padding:70px 0}
+
+.services-grid,.store-grid,.portfolio-grid {
+grid-template-columns:1fr;
+}
+
+.portfolio-item {height:250px}
+
+.course-grid {
+grid-template-columns:1fr 1fr;
+}
+
+.about-grid {
+grid-template-columns:1fr;
+gap:30px;
+}
+
+.about-art {
+min-height:250px;
+font-size:55px;
+}
+
+.steps {
+grid-template-columns:1fr;
+gap:0;
+}
+
+.contact-box {
+flex-direction:column;
+align-items:flex-start;
+padding:28px;
+}
+
+.contact-button {
+width:100%;
+text-align:center;
+}
+
+.footer-top {flex-direction:column}
+
+.checkout-body {padding:20px}
+.checkout-head {padding:22px 20px}
+}
+
+@media(max-width:390px) {
+.hero h1 {font-size:39px}
+.course-grid {grid-template-columns:1fr}
+}
+
+@media(prefers-reduced-motion:reduce) {
+*,*::before,*::after {
+animation:none!important;
+transition:none!important;
+scroll-behavior:auto!important;
+}
+.reveal {
+opacity:1;
+transform:none;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="announcement">
+Fãtzy Visuals — Creative thinking. Distinctive visuals.
+<a href="#services">Explore our services ↗</a>
+</div>
+
+<header id="siteHeader">
+<nav class="container">
+
+<a href="#home" class="logo">
+<span>FÃTZY VISUALS</span>
+<small>CREATIVE STUDIO</small>
+</a>
+
+<div class="nav-links" id="navLinks">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#work">Our Work</a>
+<a href="#academy">Academy</a>
+<a href="#store">Digital Store</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+
+<a href="#contact" class="nav-button">Start a Project ↗</a>
+
+<button class="menu" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+</nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+<div class="container hero-grid">
+
+<div class="reveal">
+
+<div class="tag">AI-POWERED CREATIVE STUDIO</div>
+
+<h1>
+Ideas deserve to look
+<span>extraordinary.</span>
+</h1>
+
+<p>
+We transform ideas into remarkable visuals, engaging videos
+and digital experiences. From brand content to AI education,
+we help creativity make an impact.
+</p>
+
+<div class="hero-buttons">
+<a href="#services" class="button">Explore Services ↗</a>
+<a href="#work" class="outline">View Our Work</a>
+</div>
+
+</div>
+
+<div class="hero-visual reveal">
+
+<div class="visual-orbit"></div>
+
+<div class="visual-box">
+<span>FÃTZY VISUALS<br>CREATIVE STUDIO</span>
+</div>
+
+<div class="floating float-one">✦ Visual storytelling</div>
+<div class="floating float-two">Creative without limits.</div>
+
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+<div class="container">
+
+<div class="section-heading reveal">
+<div class="section-label">WHAT WE DO</div>
+<h2 class="section-title">Creative solutions for modern brands.</h2>
+<p class="section-description">
+We help businesses, creators and brands communicate
+through thoughtful visual content and digital creativity.
+</p>
+</div>
+
+<div class="services-grid">
+
+<article class="service-card reveal">
+<div class="service-icon">✦</div>
+<h3>AI Image Creation</h3>
+<p>Premium AI portraits, editorial photography, campaign visuals and creative imagery.</p>
+<a href="#contact">Discuss a project ↗</a>
+</article>
+
+<article class="service-card reveal">
+<div class="service-icon">▶</div>
+<h3>AI Video Creation</h3>
+<p>Engaging AI videos, product motion, creative transitions and visual storytelling.</p>
+<a href="#contact">Discuss a project ↗</a>
+</article>
+
+<article class="service-card reveal">
+<div class="service-icon">▧</div>
+<h3>Product Photography</h3>
+<p>Creative product visuals and advertising concepts that give products a distinctive presence.</p>
+<a href="#contact">Discuss a project ↗</a>
+</article>
+
+<article class="service-card reveal">
+<div class="service-icon">▤</div>
+<h3>Social Media Content</h3>
+<p>Flyers, promotional designs, branded graphics and content for digital platforms.</p>
+<a href="#contact">Discuss a project ↗</a>
+</article>
+
+<article class="service-card reveal">
+<div class="service-icon">⌘</div>
+<h3>Website Development</h3>
+<p>Modern, responsive websites that help businesses establish a professional online presence.</p>
+<a href="#contact">Discuss a project ↗</a>
+</article>
+
+<article class="service-card reveal">
+<div class="service-icon">✧</div>
+<h3>Custom Creative Projects</h3>
+<p>Have a unique idea? Let's develop a creative solution around your vision.</p>
+<a href="#contact">Tell us your idea ↗</a>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="portfolio" id="work">
+<div class="container">
+
+<div class="section-heading reveal">
+<div class="section-label">OUR CREATIVE WORLD</div>
+<h2 class="section-title">Visuals that make people pause.</h2>
+<p class="section-description">
+Explore our creative direction across AI imagery,
+product storytelling and digital creativity.
+</p>
+</div>
+
+<div class="portfolio-grid">
+
+<div class="portfolio-item reveal">
+<div>
+<h3>AI Campaign Imagery</h3>
+<p>Creative visual storytelling</p>
+</div>
+</div>
+
+<div class="portfolio-item reveal">
+<div>
+<h3>Product Visuals</h3>
+<p>Product-focused creativity</p>
+</div>
+</div>
+
+<div class="portfolio-item reveal">
+<div>
+<h3>Creative Concepts</h3>
+<p>Ideas beyond ordinary</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ACADEMY -->
+
+<section class="academy" id="academy">
+<div class="container">
+
+<div class="section-heading reveal">
+<div class="section-label">FÃTZY VISUALS ACADEMY</div>
+<h2 class="section-title">Learn. Create. Improve.</h2>
+<p class="section-description">
+Practical AI education designed to help aspiring
+creators understand modern creative tools and techniques.
+</p>
+</div>
+
+<div class="course-grid">
+
+<article class="course-card reveal">
+<small>IMAGE CREATION</small>
+<h3>AI Image Creation Class</h3>
+<p>Learn AI image creation, prompting, composition and visual direction. Includes PDF resources and support group.</p>
+<div class="price">₦5,000</div>
+<button class="enroll-btn" data-product="AI Image Creation Class" data-price="5000">ENROLL NOW ↗</button>
+</article>
+
+<article class="course-card reveal">
+<small>PERSONAL TRAINING</small>
+<h3>One-on-One Training</h3>
+<p>Get individual guidance and learn the fundamentals of creating better AI images.</p>
+<div class="price">₦6,500</div>
+<button class="enroll-btn" data-product="One-on-One Training" data-price="6500">ENROLL NOW ↗</button>
+</article>
+
+<article class="course-card reveal">
+<small>VIDEO CREATION</small>
+<h3>AI Video Creation</h3>
+<p>Understand AI video workflows and turn creative concepts into engaging videos.</p>
+<div class="price">₦8,500</div>
+<button class="enroll-btn" data-product="AI Video Creation Training" data-price="8500">ENROLL NOW ↗</button>
+</article>
+
+<article class="course-card reveal">
+<small>DIGITAL RESOURCE</small>
+<h3>500 Premium Prompts</h3>
+<p>A collection of creative prompt ideas for different image-generation projects.</p>
+<div class="price">₦3,000</div>
+<button class="enroll-btn" data-product="500 Premium Prompts" data-price="3000">ENROLL NOW ↗</button>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- DIGITAL STORE -->
+
+<section id="store">
+<div class="container">
+
+<div class="section-heading reveal">
+<div class="section-label">DIGITAL STORE</div>
+<h2 class="section-title">Resources for your creative journey.</h2>
+<p class="section-description">
+Explore digital resources designed to make
+your creative workflow easier. Prices are displayed upfront.
+</p>
+</div>
+
+<div class="store-grid">
+
+<article class="store-card reveal">
+<div class="service-icon">▤</div>
+<h3>AI Image Creation PDF</h3>
+<p>A practical learning resource for aspiring AI image creators, including learning support.</p>
+<div class="price">₦5,000</div>
+<button class="enroll-btn" data-product="AI Image Creation PDF" data-price="5000">ENROLL NOW ↗</button>
+</article>
+
+<article class="store-card reveal">
+<div class="service-icon">✧</div>
+<h3>Premium Prompt Collection</h3>
+<p>500 creative prompt ideas for portraits, products and different visual concepts.</p>
+<div class="price">₦3,000</div>
+<button class="enroll-btn" data-product="500 Premium Prompts" data-price="3000">ENROLL NOW ↗</button>
+</article>
+
+<article class="store-card reveal">
+<div class="service-icon">＋</div>
+<h3>More Digital Products</h3>
+<p>Additional creative resources and digital products are currently in development.</p>
+<strong style="display:inline-block;margin-top:20px;color:#8190a7;font-size:11px;">COMING SOON</strong>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+<div class="container about-grid">
+
+<div class="about-art reveal"><span>FV</span></div>
+
+<div class="reveal">
+<div class="section-label">ABOUT FÃTZY VISUALS</div>
+<h2 class="section-title">Creativity with a clear purpose.</h2>
+
+<p class="section-description">
+Fãtzy Visuals is an AI-powered creative brand
+focused on visual storytelling, digital experiences
+and creative education.
+</p>
+
+<p class="section-description">
+We believe technology should expand what people
+can imagine and create. Our goal is to help brands
+communicate better and creators develop practical
+creative skills.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROCESS -->
+
+<section>
+<div class="container">
+
+<div class="section-heading reveal">
+<div class="section-label">OUR PROCESS</div>
+<h2 class="section-title">From idea to execution.</h2>
+</div>
+
+<div class="steps">
+
+<div class="step reveal">
+<strong>01</strong>
+<h3>Tell us your idea</h3>
+<p>Share your creative brief, goals and references.</p>
+</div>
+
+<div class="step reveal">
+<strong>02</strong>
+<h3>We plan the direction</h3>
+<p>We discuss the approach, pricing and timeline.</p>
+</div>
+
+<div class="step reveal">
+<strong>03</strong>
+<h3>We create</h3>
+<p>Your project moves from concept to delivery.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+<div class="container">
+
+<div class="contact-box">
+
+<div>
+<div class="section-label">LET'S WORK TOGETHER</div>
+<h2 class="section-title">Have an idea? Let's create it.</h2>
+
+<p>
+Whether you're a business looking for creative
+services, a creator interested in learning AI,
+or someone with a unique project, we'd love
+to hear from you.
+</p>
+
+<p>
+<strong>International customers:</strong>
+For payment options outside Nigeria, please
+contact us through email before making payment.
+</p>
+
+<div class="contact-links">
+
+<a href="https://www.instagram.com/fatzyvisuals?exln=MTQxNTdkY3BoY2R0eA==" target="_blank" rel="noopener">Instagram ↗</a>
+
+<a href="https://www.facebook.com/share/1EFvZv3bxG/" target="_blank" rel="noopener">Facebook ↗</a>
+
+<a href="https://x.com/fatzyvisuals" target="_blank" rel="noopener">X ↗</a>
+
+<a href="https://whatsapp.com/channel/0029VbCey96KAwEl67qg5" target="_blank" rel="noopener">WhatsApp Channel ↗</a>
+
+</div>
+</div>
+
+<a class="button contact-button" href="mailto:Fatzyvisuals@gmail.com?subject=F%C3%A3tzy%20Visuals%20Enquiry">
+Email the studio ↗
+</a>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+<div class="container">
+
+<div class="footer-top">
+
+<div>
+<div class="footer-brand">FÃTZY <span>VISUALS</span></div>
+
+<p class="footer-description">
+An AI-powered creative studio and learning
+space for brands, businesses and creators.
+</p>
+</div>
+
+<div class="footer-links">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#work">Our Work</a>
+<a href="#academy">Academy</a>
+<a href="#store">Digital Store</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+
+<div class="copyright">
+<span>© <span id="year"></span> Fãtzy Visuals. All rights reserved.</span>
+<span>Creative thinking. Distinctive visuals.</span>
+</div>
+
+</div>
+</footer>
+
+<!-- PAYMENT WINDOW -->
+
+<div class="checkout-overlay" id="checkout" role="dialog" aria-modal="true">
+
+<div class="checkout-panel">
+
+<div class="checkout-head">
+
+<button class="close-checkout" id="closeCheckout" aria-label="Close">×</button>
+
+<small>FÃTZY VISUALS • PAYMENT DETAILS</small>
+
+<h2>Complete your enrolment</h2>
+
+<p>
+Transfer the displayed amount to either OPay account below.
+After payment, click the confirmation button.
+</p>
+
+</div>
+
+<div class="checkout-body">
+
+<div class="selected-product">
+<span id="selectedName">Selected product</span>
+<strong id="selectedPrice">₦0</strong>
+</div>
+
+<div class="payment-title">TRANSFER TO EITHER ACCOUNT</div>
+
+<div class="account-card">
+
+<div class="account-top">
+<strong>OPay Account 1</strong>
+<button class="copy-btn" data-copy="7041347577">COPY NUMBER</button>
+</div>
+
+<div class="account-number">7041347577</div>
+
+<div class="account-name">
+Account name: Emmanuel Oluwajuwon Fatoye
+</div>
+
+</div>
+
+<div class="account-card">
+
+<div class="account-top">
+<strong>OPay Account 2</strong>
+<button class="copy-btn" data-copy="9074926878">COPY NUMBER</button>
+</div>
+
+<div class="account-number">9074926878</div>
+
+<div class="account-name">
+Account name: Emmanuel Oluwajuwon Fatoye
+</div>
+
+</div>
+
+<p class="payment-note">
+Please transfer the exact amount displayed above.
+After making payment, enter your name and click the button below.
+Your payment will be verified manually before delivery or enrolment.
+</p>
+
+<label class="customer-label" for="customerName">YOUR NAME</label>
+
+<input
+class="customer-input"
+id="customerName"
+type="text"
+maxlength="80"
+placeholder="Enter the name used for payment"
+autocomplete="name"
+>
+
+<button class="paid-btn" id="paidBtn">
+I'VE PAID — CONFIRM ON WHATSAPP ↗
+</button>
+
+<div class="international-note">
+Paying from outside Nigeria?
+<a href="mailto:Fatzyvisuals@gmail.com?subject=International%20Payment%20Enquiry">
+Email us for international payment options.
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="toast" id="toast">Account number copied.</div>
+
+<script>
+
+/* MOBILE NAVIGATION */
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+const open = navLinks.classList.toggle("open");
+menuBtn.textContent = open ? "×" : "☰";
+menuBtn.setAttribute("aria-expanded", String(open));
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+link.addEventListener("click", () => {
+navLinks.classList.remove("open");
+menuBtn.textContent = "☰";
+menuBtn.setAttribute("aria-expanded", "false");
+});
+});
+
+/* HEADER SCROLL EFFECT */
+
+const header = document.getElementById("siteHeader");
+
+window.addEventListener("scroll", () => {
+header.classList.toggle("scrolled", window.scrollY > 20);
+}, {passive:true});
+
+/* COPYRIGHT YEAR */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+/* SCROLL REVEAL */
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting) {
+entry.target.classList.add("show");
+observer.unobserve(entry.target);
+}
+
+});
+
+}, {threshold:0.12});
+
+document.querySelectorAll(".reveal").forEach(element => {
+observer.observe(element);
+});
+
+/* PAYMENT SYSTEM */
+
+const WHATSAPP_NUMBER = "2349074926878";
+
+const checkout = document.getElementById("checkout");
+const selectedName = document.getElementById("selectedName");
+const selectedPrice = document.getElementById("selectedPrice");
+const customerName = document.getElementById("customerName");
+
+let currentProduct = "";
+let currentPrice = 0;
+
+function formatNaira(amount) {
+return "₦" + Number(amount).toLocaleString("en-NG");
+}
+
+/* OPEN PAYMENT WINDOW */
+
+function openCheckout(product, price) {
+
+currentProduct = product;
+currentPrice = Number(price);
+
+selectedName.textContent = product;
+selectedPrice.textContent = formatNaira(price);
+
+customerName.value = "";
+
+checkout.classList.add("open");
+document.body.classList.add("modal-open");
+
+setTimeout(() => customerName.focus(), 150);
+
+}
+
+/* ENROLMENT BUTTONS */
+
+document.querySelectorAll("[data-product][data-price]").forEach(button => {
+
+button.addEventListener("click", () => {
+openCheckout(button.dataset.product, button.dataset.price);
+});
+
+});
+
+/* CLOSE PAYMENT WINDOW */
+
+function closeCheckout() {
+checkout.classList.remove("open");
+document.body.classList.remove("modal-open");
+}
+
+document.getElementById("closeCheckout").addEventListener("click", closeCheckout);
+
+checkout.addEventListener("click", event => {
+if(event.target === checkout) closeCheckout();
+});
+
+document.addEventListener("keydown", event => {
+if(event.key === "Escape") closeCheckout();
+});
+
+/* COPY ACCOUNT NUMBERS */
+
+function showToast(message) {
+
+const toast = document.getElementById("toast");
+
+toast.textContent = message;
+toast.classList.add("show");
+
+clearTimeout(window.toastTimer);
+
+window.toastTimer = setTimeout(() => {
+toast.classList.remove("show");
+}, 2200);
+
+}
+
+document.querySelectorAll("[data-copy]").forEach(button => {
+
+button.addEventListener("click", async () => {
+
+const number = button.dataset.copy;
+
+try {
+
+await navigator.clipboard.writeText(number);
+
+showToast("OPay account number copied.");
+
+} catch(error) {
+
+const temporary = document.createElement("textarea");
+
+temporary.value = number;
+
+document.body.appendChild(temporary);
+
+temporary.select();
+
+document.execCommand("copy");
+
+temporary.remove();
+
+showToast("OPay account number copied.");
+
+}
+
+});
+
+});
+
+/* WHATSAPP PAYMENT CONFIRMATION */
+
+document.getElementById("paidBtn").addEventListener("click", () => {
+
+const name = customerName.value.trim();
+
+if(!name) {
+customerName.focus();
+customerName.style.borderColor = "#e05b5b";
+showToast("Please enter your name first.");
+return;
+}
+
+customerName.style.borderColor = "";
+
+const message = [
+"Hello Fãtzy Visuals, I've made a payment and would like to confirm my enrolment.",
+"",
+"Name: " + name,
+"Product: " + currentProduct,
+"Amount: " + formatNaira(currentPrice),
+"Payment method: OPay",
+"",
+"Please confirm my payment. I can provide my transfer receipt if needed."
+].join("\n");
+
+const whatsappUrl =
+"https://wa.me/" + WHATSAPP_NUMBER +
+"?text=" + encodeURIComponent(message);
+
+window.open(whatsappUrl, "_blank", "noopener");
+
+});
+
+</script>
+
+</body>
+  </html>
